@@ -44,4 +44,28 @@ describe('Calculator', () => {
       expect(() => calculator.sqrt(-4)).toThrow('Cannot calculate square root of negative number');
     });
   });
+  
+  describe('Multiplication', () => {
+    test('multiplies two numbers', () => {
+      expect(calculator.multiply(3, 4)).toBe(12);
+    });
+  });
+  
+  describe('Subtraction', () => {
+    test('subtracts two numbers', () => {
+      expect(calculator.subtract(10, 3)).toBe(7);
+    });
+  });
+  
+  describe('Power', () => {
+    test('calculates power', () => {
+      expect(calculator.power(2, 3)).toBe(8);
+    });
+  });
+  
+  describe('Percentage', () => {
+    test('calculates percentage', () => {
+      expect(calculator.percentage(100, 25)).toBe(25);
+    });
+  });
 });

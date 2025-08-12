@@ -44,4 +44,26 @@ describe('StringUtils', () => {
       expect(stringUtils.toSlug('React & TypeScript @ 2024')).toBe('react-typescript-2024');
     });
   });
+
+  describe('reverse', () => {
+    test('reverses a string', () => {
+      expect(stringUtils.reverse('hello')).toBe('olleh');
+    });
+  });
+  
+  describe('countVowels', () => {
+    test('counts vowels in string', () => {
+      expect(stringUtils.countVowels('hello world')).toBe(3);
+    });
+  });
+  
+  describe('truncate', () => {
+    test('truncates long string', () => {
+      expect(stringUtils.truncate('This is a long string', 10)).toBe('This i...');
+    });
+    
+    test('does not truncate short string', () => {
+      expect(stringUtils.truncate('Short', 10)).toBe('Short');
+    });
+  });
 });
