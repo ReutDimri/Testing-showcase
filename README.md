@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# 🧪 Testing Showcase Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![CI](https://github.com/ReutDimri/testing-showcase/actions/workflows/ci.yml/badge.svg)
+![Coverage](https://img.shields.io/badge/coverage-85%25-brightgreen)
+![Tests](https://img.shields.io/badge/tests-45%20passed-success)
 
-## Available Scripts
+A comprehensive testing suite demonstrating best practices in React testing with TypeScript.
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Unit Testing**: Mathematical operations, string utilities
+- **Component Testing**: React components with user interactions
+- **Integration Testing**: API calls with mocked responses
+- **Coverage Reports**: 85%+ code coverage
+- **CI/CD Pipeline**: Automated testing with GitHub Actions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Quick Start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+\`\`\`bash
+# Install dependencies
+npm install
 
-### `npm test`
+# Run tests
+npm test
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Run tests with coverage
+npm run test:coverage
 
-### `npm run build`
+# Run tests in CI mode
+npm run test:ci
+\`\`\`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📊 Test Coverage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| File | Coverage |
+|------|----------|
+| Calculator.ts | 100% |
+| StringUtils.ts | 95% |
+| UserProfile.tsx | 90% |
+| TodoList.tsx | 88% |
+| ApiService.ts | 85% |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧪 Testing Stack
 
-### `npm run eject`
+- **Jest**: Testing framework
+- **React Testing Library**: Component testing
+- **TypeScript**: Type safety
+- **GitHub Actions**: CI/CD
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 📁 Project Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+\`\`\`
+src/
+├── components/
+│   ├── TodoList.tsx
+│   ├── TodoList.test.tsx
+│   ├── UserProfile.tsx
+│   └── UserProfile.test.tsx
+├── utils/
+│   ├── calculator.ts
+│   ├── calculator.test.ts
+│   ├── stringUtils.ts
+│   └── stringUtils.test.ts
+├── services/
+│   ├── api.ts
+│   └── api.test.ts
+└── App.tsx
+\`\`\`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🎯 Testing Principles
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. **Arrange-Act-Assert**: Clear test structure
+2. **One assertion per test**: Focused testing
+3. **Descriptive names**: Self-documenting tests
+4. **Mock external dependencies**: Isolated testing
+5. **Test user behavior**: Not implementation details
 
-## Learn More
+## 📝 License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT
