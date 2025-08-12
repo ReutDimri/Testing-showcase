@@ -1,80 +1,23 @@
-# 🧪 Testing Showcase Project
+# NutriTest - Testing Suite for Nutrition Applications
 
-![CI](https://github.com/ReutDimri/testing-showcase/actions/workflows/ci.yml/badge.svg)
-![Coverage](https://img.shields.io/badge/coverage-85%25-brightgreen)
-![Tests](https://img.shields.io/badge/tests-45%20passed-success)
+## Why This Project?
+As a developer transitioning from life sciences to tech, I created this testing suite to demonstrate:
+- **Domain Knowledge**: Real nutrition calculations (BMI, TDEE, Macros)
+- **Testing Skills**: 85% coverage with meaningful tests
+- **Clean Code**: TypeScript, proper error handling, edge cases
 
-A comprehensive testing suite demonstrating best practices in React testing with TypeScript.
+## What Makes This Unique?
+This isn't just another testing demo - it's a real-world application of testing principles on actual nutrition algorithms used in health apps.
 
-## ✨ Features
+## Real-World Features Tested:
+-  BMI calculation with WHO categories
+-  TDEE (Total Daily Energy Expenditure) using Mifflin-St Jeor
+-  Macronutrient distribution for different fitness goals
+-  Hydration calculator based on weight and activity
+-  Meal planning component with real-time macro tracking
 
-- **Unit Testing**: Mathematical operations, string utilities
-- **Component Testing**: React components with user interactions
-- **Integration Testing**: API calls with mocked responses
-- **Coverage Reports**: 85%+ code coverage
-- **CI/CD Pipeline**: Automated testing with GitHub Actions
-
-## 🚀 Quick Start
-
-\`\`\`bash
-# Install dependencies
-npm install
-
-# Run tests
-npm test
-
-# Run tests with coverage
-npm run test:coverage
-
-# Run tests in CI mode
-npm run test:ci
-\`\`\`
-
-## 📊 Test Coverage
-
-| File | Coverage |
-|------|----------|
-| Calculator.ts | 100% |
-| StringUtils.ts | 95% |
-| UserProfile.tsx | 90% |
-| TodoList.tsx | 88% |
-| ApiService.ts | 85% |
-
-## 🧪 Testing Stack
-
-- **Jest**: Testing framework
-- **React Testing Library**: Component testing
-- **TypeScript**: Type safety
-- **GitHub Actions**: CI/CD
-
-## 📁 Project Structure
-
-\`\`\`
-src/
-├── components/
-│   ├── TodoList.tsx
-│   ├── TodoList.test.tsx
-│   ├── UserProfile.tsx
-│   └── UserProfile.test.tsx
-├── utils/
-│   ├── calculator.ts
-│   ├── calculator.test.ts
-│   ├── stringUtils.ts
-│   └── stringUtils.test.ts
-├── services/
-│   ├── api.ts
-│   └── api.test.ts
-└── App.tsx
-\`\`\`
-
-## 🎯 Testing Principles
-
-1. **Arrange-Act-Assert**: Clear test structure
-2. **One assertion per test**: Focused testing
-3. **Descriptive names**: Self-documenting tests
-4. **Mock external dependencies**: Isolated testing
-5. **Test user behavior**: Not implementation details
-
-## 📝 License
-
-MIT
+## My Testing Approach:
+1. **Unit Tests**: Core nutrition calculations
+2. **Integration Tests**: Component interactions
+3. **Edge Cases**: Invalid inputs, boundary values
+4. **Real Scenarios**: Based on actual user data patterns
